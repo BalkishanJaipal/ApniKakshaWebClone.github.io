@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header{
+    background-color: rgb(107, 105, 184);
+    
+    text-align: center;
+    padding: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    
+} */
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav,footer {
+  background-color: rgb(59, 48, 48);
+  display: flex;
+}
+nav a ,footer a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  float: left;
+}
+.flex-right {
+  margin-left: auto;
+}
+.menu-btn:hover {
+  color: blueviolet;
+  text-align: center;
+  background-color: black;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+}
+.flex-right:hover {
+  color: blueviolet;
+  text-align: center;
+  background-color: black;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  margin-left: auto;
+}
+section {
+  text-align: center;
+  padding: 25px;
+  /* height: 100vh; */
+
+  margin: 20px;
+}
+section h2 {
+  padding-bottom: 30px;
+}
+
+section h2 span {
+  background: linear-gradient(to bottom right, red, yellow);
+  border-radius: 10px;
+  padding: 10px 55px;
+  color: white;
+  margin: 20px 0px;
+}
+section:nth-child(odd) {
+  background-color: azure;
+}
+
+iframe,
+img {
+  padding: 0 10px;
+}
+
+h4 {
+  margin: 15px 0;
+}
+/* footer {
+  background-color: rgb(59, 48, 48);
+  overflow: hidden;
+} */
+
+/* footer a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  float: left;
+} */
+/* .copyright {
+  float: right;
+} */
+
+section h5 {
+  margin: 0 120px;
+}
+
+.banner {
+  background-image: url("logo/mainlogo.gif");
+  background-repeat: no-repeat;
+  height: 15vw;
+  min-height: 100px;
+  background-position: top center;
+  background-size: 50%;
+  background-attachment: fixed;
+}
+header {
+  background-color: black;
+}
+
+/* external css: flickity.css */
+
+
+
+.carousel-cell {
+  width: 66%;
+  
+  margin-right: 10px;
+  
+  border-radius: 5px;
+ 
+}
+.carousel-cell video, .carousel-cell iframe ,.carousel-cell a img{
+     width: 100%;
+}
+
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 */
+  position: relative;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 80%;
+}
+
+.carousel-cell a {
+  width: 80%;
+  height: 70%;
+}
+.profile{
+    border-radius: 50%;
+    height: 20%;
+    width: 20%;
+}
+.profile-name
+
+{
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+}
+.handles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.handles a{
+    background-color: rgb(125 125 125 / 25%);
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin: 5px 10px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.handles a:hover{
+    background-color: rgb(30 30 30 / 25%);
+    color: black;
+    font-size: 1.1em;
+}
+
+.y-handle
+{
+    color: 	#FF0000;
+     margin: 0 8px;
+}
+.linked-handle
+{
+   color:  #0072b1;
+   margin: 0 8px;
+}
+
+.i-handle{
+    color: #fbad50;
+    
+    
+    margin: 0 8px;
+}
+
+.about
+{
+     margin: 50px;
+}
+.tittle
+{
+    font-size: 1.45em;
+    color: #120f5e;
+    padding: 0 10px;
+}
+.content
+{
+    font-weight: 900;
+    font-size: 1.1em;
+    color: #1c1a3a;
+    padding: 10px 0px 20px 0px;
+}
+
+@media screen and (max-width: 700px) {
+  nav ,footer{
+    flex-direction: column;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  .flex-right {
+    margin-left: 0;
+  }
+  .handles
+  {
+      flex-direction: column;
+  }
+  
+  section h5
+  {
+    margin: 0px 10px;
+  }
+  .flex-right:hover{
+    
+    margin-left: 0;
+  }
+  .college_review
+  {
+    background: linear-gradient(to bottom right, red, yellow);
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    margin: 20px 0px;
+  }
+}
